@@ -1,0 +1,141 @@
+{
+  "id": "exp-2026-dem-002",
+  "is_demo": true,
+  "code": "EXP-2026-DEM-002",
+  "title": "[DEMO-FICTICIO] Defensa Dominical Hacienda La Aurora (Daule, Guayas)",
+  "role": "demandada",
+  "createdAt": "2026-10-13T11:00:00.000Z",
+  "updatedAt": "2026-10-13T22:00:48.390Z",
+  "cutoffDate": "2026-10-13",
+  "client": "Herederos de la Familia Alvarado Mendoza (Representados por Mariana Alvarado)",
+  "clientCedula": "0918765432",
+  "proceduralStage": "Contestación a la Demanda Ordinaria de Prescripción (Notificados hace 12 días)",
+  "court": "Unidad Judicial Multicompetente Civil del Cantón Daule",
+  "causeNumber": "09331-2026-00482",
+  "location": {
+    "province": "Guayas",
+    "canton": "Daule",
+    "parroquia": "La Aurora",
+    "sector": "Recinto Las Maravillas, Km 14 Vía Daule",
+    "cadastralKey": "090650030145000",
+    "surface": "24,500.00 m² (2.45 hectáreas reclamadas sobre predio mayor de 10 ha)",
+    "boundaries": {
+      "north": "Con resto de la propiedad matriz de Familia Alvarado en 180 m",
+      "south": "Con servidumbre pública y canal lateral de riego CEDEGE/EPA en 195 m",
+      "east": "Con cerramiento de Agropecuaria El Litoral S.A. en 130 m",
+      "west": "Con camino vecinal de uso comunal en 125 m"
+    }
+  },
+  "registry": {
+    "registryOffice": "Registro de la Propiedad del Cantón Daule",
+    "registeredOwner": "Cónyuges Roberto Alvarado (+) y Carmen Mendoza (+), actualmente herederos declarados en posesión efectiva",
+    "inscriptionNumber": "1189",
+    "tome": "34",
+    "folio": "210",
+    "inscriptionDate": "1982-11-04",
+    "encumbrances": "Posesión Efectiva proindiviso inscrita el 14 de marzo de 2022; sin gravámenes ni hipotecas",
+    "backgroundDomain": "Escritura pública de partición voluntaria celebrada ante Notario Primero de Daule en 1982"
+  },
+  "possession": {
+    "startDate": "El actor alega en su libelo posesión desde enero de 2009",
+    "computationMethod": "La actora computa 17 años alegados. Sin embargo, la demandada sostiene que residía bajo relación laboral y comodato hasta 2019",
+    "entryMethod": "Contrato verbal de trabajo como cuidador/guardián agrícola y comodato precario de la vivienda de guardianía",
+    "actsOfOwner": "La actora alega haber sembrado ciclo corto y habitado la casa de madera. La demandada refuta: la casa fue construida por el dueño original; los cultivos fueron pagados como insumos patronales; los impuestos prediales han sido pagados ininterrumpidamente por la familia Alvarado.",
+    "continuity": "Interrumpida por despido laboral y requerimientos de desalojo notarial en 2019.",
+    "publicity": "Ocupación no autónoma sino como dependiente del predio matriz de la familia Alvarado.",
+    "peaceful": "En 2020 se suscitaron incidentes de desalojo y reclamos policiales por negativa a entregar el predio tras la desvinculación laboral.",
+    "recognitionOfForeignDomain": "Existe reconocimiento expreso de dominio ajeno: finiquito laboral firmado en 2019 donde el actor reconocía habitar la casa de cuidadores de la hacienda de propiedad de los Alvarado; además existe correspondencia solicitando prórroga de estancia.",
+    "interruptionsOrLawsuits": "Requerimiento notarial de desahucio y entrega de bien inmueble practicado en octubre de 2019 ante la Notaría Segunda de Daule."
+  },
+  "opposingParty": {
+    "status": "Actor: Segundo Aurelio Piguave (Ex guardián agrícola del predio).",
+    "coOwners": "Siete herederos de la sucesión Alvarado. La actora solo demandó a tres de ellos, omitiendo a cuatro copropietarios registrados.",
+    "thirdParties": "GAD Municipal de Daule y Empresa Pública del Agua (EPA) por franja de servidumbre de canal de riego."
+  },
+  "propertyNature": {
+    "isPublic": false,
+    "isMunicipal": false,
+    "isCommunal": false,
+    "isProtectedArea": false,
+    "observations": "Bien privado matriz, pero una franja de 30 metros al sur constituye faja de servidumbre y protección hídrica de bien público estatal (EPA)."
+  },
+  "evidence": [
+    {
+      "id": "ev-d01",
+      "type": "Documental",
+      "name": "Acta de Finiquito Laboral y Liquidación ante Ministerio de Trabajo (2019)",
+      "description": "Documento suscrito por el actor Segundo Piguave en el que se liquida su relación de dependencia laboral como guardián del predio 'Hacienda La Aurora'. Prueba concluyente de mera tenencia (Art. 730 C.C.).",
+      "status": "Disponible",
+      "date": "2019-11-20"
+    },
+    {
+      "id": "ev-d02",
+      "type": "Documental",
+      "name": "Historial de Pago de Impuestos Prediales del Cantón Daule (2005-2026)",
+      "description": "Comprobantes municipales oficiales emitidos a nombre ininterrumpido de la Familia Alvarado por la totalidad del predio matriz de 10 ha.",
+      "status": "Disponible",
+      "date": "2026-10-02"
+    },
+    {
+      "id": "ev-d03",
+      "type": "Documental",
+      "name": "Requerimiento Notarial de Entrega de Predio e Intimación de Desahucio (2019)",
+      "description": "Diligencia notarial en la que se conmina al ocupante a desocupar la casa de guardianía. Prueba de falta de pacificidad y reclamo tempestivo.",
+      "status": "Disponible",
+      "date": "2019-10-15"
+    },
+    {
+      "id": "ev-d04",
+      "type": "Documental",
+      "name": "Certificado de Gravámenes y Posesión Efectiva del Registro de la Propiedad de Daule",
+      "description": "Demuestra la existencia de siete coherederos legitimarios debidamente inscritos. La actora solo citó a tres de ellos.",
+      "status": "Disponible",
+      "date": "2026-09-28"
+    },
+    {
+      "id": "ev-d05",
+      "type": "Pericial",
+      "name": "Informe Pericial Topográfico de la Demanda (Impugnado)",
+      "description": "El peritaje del actor superpone el área reclamada con la servidumbre pública de la EPA y no concuerda en 40 metros con el lindero norte.",
+      "status": "En análisis para objeción",
+      "date": "2026-10-08"
+    }
+  ],
+  "chronology": [
+    {
+      "date": "1982-11-04",
+      "event": "Inscripción del título de dominio originario en el Registro de la Propiedad de Daule a favor de Roberto Alvarado y Carmen Mendoza."
+    },
+    {
+      "date": "2009-01-10",
+      "event": "Ingreso de Segundo Piguave al predio en calidad de trabajador agrícola y cuidador dependiente de la familia Alvarado (mera tenencia)."
+    },
+    {
+      "date": "2019-10-15",
+      "event": "Notificación de requerimiento notarial para desocupación de la casa de guardianía tras cese de labores."
+    },
+    {
+      "date": "2019-11-20",
+      "event": "Suscripción de acta de finiquito ante inspector del trabajo, reconociendo el actor su condición laboral en el predio."
+    },
+    {
+      "date": "2022-03-14",
+      "event": "Inscripción de la posesión efectiva de los siete herederos Alvarado en el Registro de la Propiedad de Daule."
+    },
+    {
+      "date": "2026-09-30",
+      "event": "Notificación de citación a tres de los herederos con la demanda de prescripción ordinaria No. 09331-2026-00482."
+    },
+    {
+      "date": "2026-10-13",
+      "event": "Fecha de corte del análisis: Preparación de excepciones previas de falta de legitimación pasiva y excepciones de fondo de mera tenencia."
+    }
+  ],
+  "witnessQuestions": [
+    "¿Diga el testigo si le consta que el señor Segundo Piguave laboró bajo dependencia patronal de la familia Alvarado como guardián de la hacienda?",
+    "¿Diga el testigo si sabe quién costeaba los gastos de mantenimiento, semillas e impuestos prediales del predio?",
+    "¿Diga el testigo si en el año 2019 la familia Alvarado requirió formalmente la entrega de la vivienda de guardianía?",
+    "¿Diga el testigo si la comunidad siempre reconoció a la familia Alvarado como los auténticos propietarios de la totalidad del inmueble?"
+  ],
+  "notes": "Plantear excepción previa de falta de legitimación pasiva por no haberse demandado a la totalidad de los copropietarios en litisconsorcio pasivo necesario (Art. 153 num. 3 COGEP), defecto de la demanda por indebida individualización (superposición con canal de riego), y excepción sustancial de mera tenencia (Art. 730 y 734 Código Civil)."
+}

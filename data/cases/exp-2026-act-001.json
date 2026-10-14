@@ -1,0 +1,145 @@
+{
+  "id": "exp-2026-act-001",
+  "is_demo": true,
+  "code": "EXP-2026-ACT-001",
+  "title": "[DEMO-FICTICIO] Prescripción Lote El Sauce (Tumbaco, Quito)",
+  "role": "neutral",
+  "createdAt": "2026-10-13T10:00:00.000Z",
+  "updatedAt": "2026-10-14T17:25:13.147Z",
+  "cutoffDate": "2026-10-13",
+  "client": "Carlos Efraín Morales Andrade",
+  "clientCedula": "1712345678",
+  "proceduralStage": "Pre-procesal (Preparación de demanda)",
+  "court": "Unidad Judicial Civil de la Parroquia Iñaquito (Quito)",
+  "causeNumber": "Por sortearse",
+  "location": {
+    "province": "Pichincha",
+    "canton": "Quito",
+    "parroquia": "Tumbaco",
+    "sector": "Barrio El Sauce, Calle Los Guabos y Av. Interoceánica",
+    "cadastralKey": "170102048592001",
+    "surface": "850.45 m²",
+    "boundaries": {
+      "north": "Con propiedad particular de Familia Gómez en 28.50 m",
+      "south": "Con Calle Pública Los Guabos en 29.10 m (frente)",
+      "east": "Con lote de herederos Paredes en 29.80 m",
+      "west": "Con pasaje comunal servidumbre de paso en 29.00 m"
+    }
+  },
+  "registry": {
+    "registryOffice": "Registro de la Propiedad del Cantón Quito",
+    "registeredOwner": "Constructora e Inmobiliaria Andina S.A. (Representada por su liquidador)",
+    "inscriptionNumber": "4521",
+    "tome": "142",
+    "folio": "89",
+    "inscriptionDate": "1994-08-15",
+    "encumbrances": "Sin prohibiciones de enajenar ni hipotecas activas según certificado con corte 05/10/2026",
+    "backgroundDomain": "Adquirido por escritura de compraventa protocolizada en la Notaría 12 de Quito en 1994"
+  },
+  "possession": {
+    "startDate": "2008-04-12",
+    "entryMethod": "Cesión verbal de derechos de hecho con un poseedor previo y toma de posesión material pacífica directa",
+    "actsOfOwner": "Construcción de cerramiento perimetral de bloque y hormigón en 2009; edificación de casa de habitación familiar de una planta terminada en 2011; nivelación de suelo y siembra de huerto; instalación de acometida eléctrica definitiva con planilla CNEL a su nombre desde 2010; acometida de agua potable de la EPMAPS desde 2011; pago anual de impuesto predial a nombre de la constructora pero pagado en ventanilla por el actor.",
+    "continuity": "Posesión continua, sin abandonos temporales ni cesión a terceros.",
+    "publicity": "Pública y notoria; los vecinos del barrio reconocen al actor como único dueño y habitante.",
+    "peaceful": "Ingreso y permanencia pacíficos; sin violencia en las personas ni en las cosas; sin clandestinidad.",
+    "recognitionOfForeignDomain": "No existe contrato de arrendamiento, ni comodato, ni relación laboral ni autorización del titular registral.",
+    "interruptionsOrLawsuits": "Ninguna demanda civil ni citación judicial previa; ningún reclamo formulado por el titular registral en 18 años."
+  },
+  "opposingParty": {
+    "status": "Titular registral es persona jurídica disuelta y en liquidación; domicilio legal desactualizado; paradero de liquidador incierto.",
+    "coOwners": "No constan copropietarios en el certificado de gravámenes.",
+    "thirdParties": "GAD del Distrito Metropolitano de Quito (debe ser citado conforme ordenanzas y COOTAD para regularización)."
+  },
+  "propertyNature": {
+    "isPublic": false,
+    "isMunicipal": false,
+    "isCommunal": false,
+    "isProtectedArea": false,
+    "observations": "Bien de dominio privado particular con antecedente dominial inscrito. Plenamente prescriptible en el comercio humano (Art. 2398 C.C.)."
+  },
+  "evidence": [
+    {
+      "id": "ev-01",
+      "type": "Documental",
+      "name": "Certificado de Gravámenes del Registro de la Propiedad de Quito",
+      "description": "Acredita la titularidad registral a nombre de Constructora e Inmobiliaria Andina S.A. y linderos registrales matrices.",
+      "status": "Disponible",
+      "date": "2026-10-05"
+    },
+    {
+      "id": "ev-02",
+      "type": "Pericial",
+      "name": "Levantamiento Planimétrico Georreferenciado y Memoria Técnica",
+      "description": "Elaborado por Ingeniero Geógrafo legalmente facultado, con coordenadas WGS84, superficie exacta de 850.45 m2 y linderos coincidentes con la realidad.",
+      "status": "Disponible",
+      "date": "2026-09-20"
+    },
+    {
+      "id": "ev-03",
+      "type": "Documental",
+      "name": "Planillas históricas de Servicio Eléctrico (EEQ) y Agua Potable (EPMAPS)",
+      "description": "Comprobantes de pago y contratos de servicio a nombre de Carlos Morales desde los años 2010 y 2011.",
+      "status": "Disponible",
+      "date": "2026-10-01"
+    },
+    {
+      "id": "ev-04",
+      "type": "Documental",
+      "name": "Recibos de Pago de Impuesto Predial Urbano",
+      "description": "Comprobantes de pago emitidos por el Municipio de Quito conservados por el actor desde el ejercicio fiscal 2012.",
+      "status": "Disponible",
+      "date": "2026-01-15"
+    },
+    {
+      "id": "ev-05",
+      "type": "Testimonial",
+      "name": "Declaración de tres testigos vecinos colindantes",
+      "description": "Vecinos históricos del barrio El Sauce que darán fe del ingreso en 2008, la construcción de la vivienda y la posesión pacífica e ininterrumpida.",
+      "status": "En trámite",
+      "date": "2026-10-10"
+    },
+    {
+      "id": "ev-06",
+      "type": "Inspección",
+      "name": "Inspección Judicial del Inmueble (Art. 228 COGEP)",
+      "description": "Diligencia judicial para verificar físicamente el cerramiento, la casa habitada, la antigüedad de las construcciones y los linderos.",
+      "status": "Pendiente de solicitud en demanda",
+      "date": "2026-10-13"
+    }
+  ],
+  "chronology": [
+    {
+      "date": "2008-04-12",
+      "event": "Toma de posesión material pacífica del lote por parte de Carlos Morales; inicio de labores de limpieza del terreno."
+    },
+    {
+      "date": "2009-02-18",
+      "event": "Construcción e instalación del cerramiento perimetral de bloque y portón metálico de ingreso."
+    },
+    {
+      "date": "2010-06-05",
+      "event": "Instalación del medidor de energía eléctrica (EEQ) a nombre del actor Carlos Morales."
+    },
+    {
+      "date": "2011-01-20",
+      "event": "Finalización de la construcción de la vivienda familiar de una planta y conexión de agua potable EPMAPS."
+    },
+    {
+      "date": "2023-04-12",
+      "event": "Cumplimiento ininterrumpido del plazo legal de 15 años previsto en el Art. 2411 del Código Civil."
+    },
+    {
+      "date": "2026-10-13",
+      "event": "Fecha de corte del análisis jurídico: 18 años y 6 meses de posesión material comprobable."
+    }
+  ],
+  "witnessQuestions": [
+    "¿Diga el testigo si conoce desde qué año el señor Carlos Morales reside y ejerce posesión en el lote de terreno de la Calle Los Guabos?",
+    "¿Diga el testigo qué actos materiales (construcciones, cerramientos, servicios) ha observado que haya realizado el actor en dicho predio?",
+    "¿Diga el testigo si en algún momento durante estos 18 años ha presenciado reclamos, desalojos o interrupciones por parte de personas que aleguen ser dueñas?",
+    "¿Diga el testigo si en el sector se reconoce pública y unánimemente al señor Carlos Morales como señor y dueño del bien inmueble?"
+  ],
+  "notes": "Verificar la dirección vigente del liquidador de la compañía demandada ante la Superintendencia de Compañías para solicitar citación personal, o justificar bajo juramento la imposibilidad de determinar su domicilio para solicitar citación por la prensa bajo el Art. 56 del COGEP.",
+  "documents": []
+}

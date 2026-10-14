@@ -1,0 +1,1004 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>LexDominio Ecuador - Asistente Jurídico de Prescripción Extraordinaria Adquisitiva</title>
+  <link rel="stylesheet" href="/css/styles.css">
+</head>
+<body>
+
+<div class="app-container">
+  <!-- SIDEBAR -->
+  <aside class="sidebar">
+    <div class="brand-header">
+      <div class="brand-title">
+        <span>LexDominio</span>
+        <span class="brand-badge">Ecuador</span>
+      </div>
+      <div class="brand-subtitle">
+        Prescripción Extraordinaria Adquisitiva de Dominio
+      </div>
+    </div>
+
+    <!-- Active Case Display -->
+    <div class="active-case-widget" id="sidebarActiveCase">
+      <div class="active-case-label">Expediente en Análisis</div>
+      <div class="active-case-code" id="activeCaseCodeDisplay">EXP-2026-ACT-001</div>
+      <span class="active-case-role role-actora" id="activeCaseRoleBadge">Parte Actora</span>
+    </div>
+
+    <!-- Navigation Menu -->
+    <ul class="nav-menu">
+      <li class="nav-item">
+        <a class="nav-link active" data-view="cases">
+          <svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 7v10a2 2 0 002 2h14a2 2 0 002-2V9a2 2 0 00-2-2h-6l-2-2H5a2 2 0 00-2 2z"/></svg>
+          Expedientes
+        </a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" data-view="form">
+          <svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"/></svg>
+          Formulario del Caso
+        </a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" data-view="analysis">
+          <svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 6l3 1m0 0l-3 9a5.002 5.002 0 006.001 0M6 7l3 9M6 7l6-2m6 2l3-1m-3 1l-3 9a5.002 5.002 0 006.001 0M18 7l3 9m-3-9l-6-2m0-2v2m0 16V5m0 16H9m3 0h3"/></svg>
+          Análisis por Rol
+        </a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" data-view="search">
+          <svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"/></svg>
+          Búsqueda Jurídica EC
+        </a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" data-view="docs">
+          <svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-6 9l2 2 4-4"/></svg>
+          Documentos y Pruebas
+        </a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" data-view="export">
+          <svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"/></svg>
+          Informes y Exportación
+        </a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" data-view="privacy">
+          <svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z"/></svg>
+          Privacidad y Seguridad
+        </a>
+      </li>
+    </ul>
+
+    <div class="sidebar-footer">
+      <div class="flag-tag">
+        <span>🇪🇨</span> Jurisdicción: Ecuador
+      </div>
+      <div>Fuentes: CC, CNJ, Registro Oficial, COGEP, Código Civil. Local-First.</div>
+    </div>
+  </aside>
+
+  <!-- MAIN WRAPPER -->
+  <div class="main-wrapper">
+    <!-- Top Deontology Disclaimer Banner -->
+    <div class="deontology-banner">
+      <div class="banner-content">
+        <span class="banner-badge">Aviso Legal y Deontológico</span>
+        <span>Herramienta técnica de investigación para abogados ecuatorianos. <strong>No reemplaza el criterio del profesional</strong>, no garantiza resultados ni constituye asesoría definitiva. Rige exclusivamente el derecho ecuatoriano.</span>
+      </div>
+      <div id="saveStatusIndicator" style="font-size:0.75rem; color:#065f46; font-weight:600;">
+        • Almacenamiento Local Seguro
+      </div>
+    </div>
+
+    <!-- Top Bar -->
+    <header class="topbar">
+      <div class="topbar-title-group">
+        <h1 id="topbarViewTitle">Gestión de Expedientes</h1>
+        <p id="topbarViewDesc">Cree o seleccione un expediente para analizar los presupuestos de prescripción adquisitiva extraordinaria.</p>
+      </div>
+      <div class="topbar-actions" id="topbarActions">
+        <button class="btn btn-outline" id="btnToggleHelp">
+          <svg width="16" height="16" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+          Guía de Prescripción
+        </button>
+        <button class="btn btn-primary" id="btnNewCaseModal">
+          <svg width="16" height="16" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4v16m8-8H4"/></svg>
+          Nuevo Expediente
+        </button>
+      </div>
+    </header>
+
+    <!-- VIEWS CONTAINER -->
+    <main class="content-view">
+      
+      <!-- ========================================== -->
+      <!-- VIEW 1: CASES (EXPEDIENTES) -->
+      <!-- ========================================== -->
+      <section id="view-cases" class="view-panel">
+        <div class="card">
+          <div class="card-header">
+            <h2 class="card-title">
+              <svg width="20" height="20" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10"/></svg>
+              Expedientes Registrados en el Sistema
+            </h2>
+            <div style="display:flex; gap:10px;">
+              <input type="text" id="caseSearchInput" class="form-control" placeholder="Buscar por código, cliente o cantón..." style="width:260px;">
+              <button class="btn btn-gold btn-sm" id="btnQuickNewCase">+ Crear</button>
+            </div>
+          </div>
+          <div class="card-body">
+            <div style="background-color:#eff6ff; border:1px solid #bfdbfe; border-radius:6px; padding:12px 16px; margin-bottom:16px; font-size:0.8rem; color:#1e40af;">
+              ℹ️ <strong>Casos de Demostración:</strong> El sistema incluye expedientes precargados con datos ficticios etiquetados como <code>[DEMO-FICTICIO]</code> para que pueda evaluar de inmediato el análisis para Parte Actora y Parte Demandada.
+            </div>
+            <div class="table-responsive">
+              <table class="table" id="casesTable">
+                <thead>
+                  <tr>
+                    <th>Código</th>
+                    <th>Título del Expediente</th>
+                    <th>Rol de Análisis</th>
+                    <th>Cliente / Patrocinado</th>
+                    <th>Cantón</th>
+                    <th>Etapa Procesal</th>
+                    <th>Última Modif.</th>
+                    <th style="text-align:right;">Acciones</th>
+                  </tr>
+                </thead>
+                <tbody id="casesTableBody">
+                  <!-- Rendered dynamically -->
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ========================================== -->
+      <!-- VIEW 2: FORMULARIO DEL CASO -->
+      <!-- ========================================== -->
+      <section id="view-form" class="view-panel" style="display:none;">
+        <div class="card">
+          <div class="card-header">
+            <h2 class="card-title">
+              <span id="formCaseCodeBadge" class="badge badge-verified" style="font-size:0.82rem;">EXP-2026-ACT-001</span>
+              Ficha Integral del Caso de Prescripción Extraordinaria
+            </h2>
+            <div style="display:flex; gap:10px; align-items:center;">
+              <span id="autoSaveStatus" style="font-size:0.75rem; color:var(--text-muted);">Guardado automáticamente</span>
+              <button class="btn btn-primary btn-sm" id="btnSaveCaseExplicit">Guardar Cambios</button>
+            </div>
+          </div>
+          <div class="card-body">
+            <!-- Form Tabs -->
+            <div class="tabs-container">
+              <button class="tab-btn active" data-form-tab="tab-general">1. Rol y Proceso</button>
+              <button class="tab-btn" data-form-tab="tab-property">2. Predio e Individualización</button>
+              <button class="tab-btn" data-form-tab="tab-registry">3. Registro de la Propiedad</button>
+              <button class="tab-btn" data-form-tab="tab-possession">4. Posesión y Hechos</button>
+              <button class="tab-btn" data-form-tab="tab-parties">5. Sujetos Procesales</button>
+              <button class="tab-btn" data-form-tab="tab-nature">6. Naturaleza del Bien</button>
+            </div>
+
+            <!-- Tab 1: General & Role -->
+            <div id="tab-general" class="form-tab-content">
+              <div class="grid-3">
+                <div class="form-group">
+                  <label class="form-label">Rol del Análisis <span class="required">*</span></label>
+                  <select id="caseRoleInput" class="form-control" style="font-weight:600;">
+                    <option value="actora">PARTE ACTORA (Pretende adquirir por prescripción)</option>
+                    <option value="demandada">PARTE DEMANDADA (Titular / Se opone a la prescripción)</option>
+                    <option value="neutral">ANÁLISIS NEUTRAL (Evaluación integral de riesgos)</option>
+                  </select>
+                  <div class="form-hint">Define la matriz analítica y la teoría del caso.</div>
+                </div>
+                <div class="form-group">
+                  <label class="form-label">Código del Expediente</label>
+                  <input type="text" id="caseCodeInput" class="form-control" placeholder="Ej: EXP-2026-001">
+                </div>
+                <div class="form-group">
+                  <label class="form-label">Fecha de Corte del Análisis</label>
+                  <input type="date" id="caseCutoffDateInput" class="form-control">
+                  <div class="form-hint">Fecha límite para computar los 15 años legales.</div>
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label class="form-label">Título Identificativo del Caso <span class="required">*</span></label>
+                <input type="text" id="caseTitleInput" class="form-control" placeholder="Ej: Prescripción Lote Terreno El Bosque">
+              </div>
+
+              <div class="grid-2">
+                <div class="form-group">
+                  <label class="form-label">Nombre del Cliente / Patrocinado</label>
+                  <input type="text" id="caseClientInput" class="form-control" placeholder="Nombre y apellidos">
+                </div>
+                <div class="form-group">
+                  <label class="form-label">Cédula / RUC del Cliente</label>
+                  <input type="text" id="caseClientCedulaInput" class="form-control" placeholder="10 dígitos">
+                </div>
+              </div>
+
+              <div class="grid-3">
+                <div class="form-group">
+                  <label class="form-label">Etapa Procesal</label>
+                  <select id="caseProceduralStageInput" class="form-control">
+                    <option value="Pre-procesal (Preparación de demanda)">Pre-procesal (Preparación de demanda)</option>
+                    <option value="Pre-procesal (Preparación de contestación)">Pre-procesal (Preparación de contestación)</option>
+                    <option value="Demanda admitida / Citación">Demanda admitida / Citación</option>
+                    <option value="Calificación de excepciones previas">Calificación de excepciones previas</option>
+                    <option value="Audiencia Preliminar (Art. 292 COGEP)">Audiencia Preliminar (Art. 292 COGEP)</option>
+                    <option value="Audiencia de Juicio (Art. 297 COGEP)">Audiencia de Juicio (Art. 297 COGEP)</option>
+                    <option value="Recurso de Apelación">Recurso de Apelación</option>
+                    <option value="Recurso Extraordinario de Casación">Recurso Extraordinario de Casación</option>
+                  </select>
+                </div>
+                <div class="form-group">
+                  <label class="form-label">Judicatura / Unidad Judicial</label>
+                  <input type="text" id="caseCourtInput" class="form-control" placeholder="Ej: Unidad Judicial Civil de Quito">
+                </div>
+                <div class="form-group">
+                  <label class="form-label">Número de Causa SATJE (si existe)</label>
+                  <input type="text" id="caseCauseNumberInput" class="form-control" placeholder="Ej: 17230-2026-00123">
+                </div>
+              </div>
+            </div>
+
+            <!-- Tab 2: Property Identification -->
+            <div id="tab-property" class="form-tab-content" style="display:none;">
+              <div class="grid-3">
+                <div class="form-group">
+                  <label class="form-label">Provincia <span class="required">*</span></label>
+                  <input type="text" id="locProvinceInput" class="form-control" placeholder="Ej: Pichincha">
+                </div>
+                <div class="form-group">
+                  <label class="form-label">Cantón <span class="required">*</span></label>
+                  <input type="text" id="locCantonInput" class="form-control" placeholder="Ej: Quito">
+                </div>
+                <div class="form-group">
+                  <label class="form-label">Parroquia <span class="required">*</span></label>
+                  <input type="text" id="locParroquiaInput" class="form-control" placeholder="Ej: Tumbaco">
+                </div>
+              </div>
+
+              <div class="grid-3">
+                <div class="form-group">
+                  <label class="form-label">Sector, Barrio o Dirección</label>
+                  <input type="text" id="locSectorInput" class="form-control" placeholder="Calle, número o referencia">
+                </div>
+                <div class="form-group">
+                  <label class="form-label">Clave Catastral Municipal</label>
+                  <input type="text" id="locCadastralKeyInput" class="form-control" placeholder="Número de predio municipal">
+                </div>
+                <div class="form-group">
+                  <label class="form-label">Superficie / Cabida Total <span class="required">*</span></label>
+                  <input type="text" id="locSurfaceInput" class="form-control" placeholder="Ej: 850.45 m² o 2.5 ha">
+                </div>
+              </div>
+
+              <div style="background-color:#f8fafc; border:1px solid #e2e8f0; border-radius:6px; padding:16px; margin-top:8px;">
+                <h4 style="font-size:0.86rem; font-weight:700; color:var(--primary-900); margin-bottom:10px;">
+                  Linderos Perimétricos Específicos (Exigencia Art. 142 num. 4 COGEP y Sentencia CNJ Res. 076-2012)
+                </h4>
+                <div class="grid-2">
+                  <div class="form-group">
+                    <label class="form-label">Lindero NORTE y longitud (m)</label>
+                    <input type="text" id="linderoNorthInput" class="form-control" placeholder="Colindante y dimensión en metros">
+                  </div>
+                  <div class="form-group">
+                    <label class="form-label">Lindero SUR y longitud (m)</label>
+                    <input type="text" id="linderoSouthInput" class="form-control" placeholder="Colindante y dimensión en metros">
+                  </div>
+                  <div class="form-group">
+                    <label class="form-label">Lindero ESTE y longitud (m)</label>
+                    <input type="text" id="linderoEastInput" class="form-control" placeholder="Colindante y dimensión en metros">
+                  </div>
+                  <div class="form-group">
+                    <label class="form-label">Lindero OESTE y longitud (m)</label>
+                    <input type="text" id="linderoWestInput" class="form-control" placeholder="Colindante y dimensión en metros">
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Tab 3: Registry Data -->
+            <div id="tab-registry" class="form-tab-content" style="display:none;">
+              <div class="grid-2">
+                <div class="form-group">
+                  <label class="form-label">Registro de la Propiedad del Cantón <span class="required">*</span></label>
+                  <input type="text" id="regOfficeInput" class="form-control" placeholder="Ej: Cantón Quito">
+                </div>
+                <div class="form-group">
+                  <label class="form-label">Titular Registral Inscrito (Legítimo Contradictor) <span class="required">*</span></label>
+                  <input type="text" id="regOwnerInput" class="form-control" placeholder="Nombre completo o razón social">
+                  <div class="form-hint">Quien consta como dueño en la certificación registral.</div>
+                </div>
+              </div>
+
+              <div class="grid-4">
+                <div class="form-group">
+                  <label class="form-label">N° de Inscripción</label>
+                  <input type="text" id="regNumberInput" class="form-control" placeholder="Ej: 4521">
+                </div>
+                <div class="form-group">
+                  <label class="form-label">Tomo</label>
+                  <input type="text" id="regTomeInput" class="form-control" placeholder="Ej: 142">
+                </div>
+                <div class="form-group">
+                  <label class="form-label">Folio</label>
+                  <input type="text" id="regFolioInput" class="form-control" placeholder="Ej: 89">
+                </div>
+                <div class="form-group">
+                  <label class="form-label">Fecha de Inscripción</label>
+                  <input type="date" id="regDateInput" class="form-control">
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label class="form-label">Gravámenes, Prohibiciones o Limitaciones Registrales</label>
+                <textarea id="regEncumbrancesInput" class="form-control" rows="2" placeholder="Hipotecas, embargos, prohibición de enajenar, patrimonio familiar..."></textarea>
+              </div>
+
+              <div class="form-group">
+                <label class="form-label">Antecedentes de Dominio Registral</label>
+                <textarea id="regBackgroundInput" class="form-control" rows="2" placeholder="Escrituras anteriores, modo de adquisición del titular registral..."></textarea>
+              </div>
+            </div>
+
+            <!-- Tab 4: Possession and Facts -->
+            <div id="tab-possession" class="form-tab-content" style="display:none;">
+              <div class="grid-2">
+                <div class="form-group">
+                  <label class="form-label">Fecha Desde la Cual se Alega Posesión <span class="required">*</span></label>
+                  <input type="date" id="possStartDateInput" class="form-control">
+                  <div class="form-hint">Hito inicial determinante para el cómputo de los 15 años.</div>
+                </div>
+                <div class="form-group">
+                  <label class="form-label">Forma de Ingreso y Origen de la Ocupación</label>
+                  <input type="text" id="possEntryInput" class="form-control" placeholder="Ej: Cesión verbal, ocupación directa pacífica, promesa no elevada a escritura">
+                  <div class="form-hint">Atención: No alegar arrendamiento o comodato si actúa como actora.</div>
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label class="form-label">Actos Concretos de Señor y Dueño Alegados <span class="required">*</span></label>
+                <textarea id="possActsInput" class="form-control" rows="3" placeholder="Construcción de vivienda, cerramiento perimetral de bloque, siembras, instalación de acometidas eléctricas (CNEL), medidor de agua potable, pago personal de predios..."></textarea>
+                <div class="form-hint">No concluya que hay ánimo de dueño solo con palabras; especifique qué obras y actos materiales existen.</div>
+              </div>
+
+              <div class="grid-3">
+                <div class="form-group">
+                  <label class="form-label">Continuidad de la Posesión</label>
+                  <input type="text" id="possContinuityInput" class="form-control" placeholder="Posesión ininterrumpida sin abandonos">
+                </div>
+                <div class="form-group">
+                  <label class="form-label">Publicidad</label>
+                  <input type="text" id="possPublicityInput" class="form-control" placeholder="Pública y notoria ante vecinos">
+                </div>
+                <div class="form-group">
+                  <label class="form-label">Ausencia de Violencia y Clandestinidad</label>
+                  <input type="text" id="possPeacefulInput" class="form-control" placeholder="Ingreso y permanencia pacíficos">
+                </div>
+              </div>
+
+              <div class="grid-2">
+                <div class="form-group">
+                  <label class="form-label">¿Existió Reconocimiento de Dominio Ajeno, Arriendo o Comodato?</label>
+                  <textarea id="possRecogInput" class="form-control" rows="2" placeholder="Indicar si hubo contratos de arrendamiento, comodato, recibos de alquiler o cartas reconociendo al titular como dueño"></textarea>
+                </div>
+                <div class="form-group">
+                  <label class="form-label">¿Hubo Interrupciones, Reclamos o Juicios Previos?</label>
+                  <textarea id="possInterrInput" class="form-control" rows="2" placeholder="Demandas reivindicatorias anteriores, citaciones judiciales, denuncias de invasión, requerimientos notariales"></textarea>
+                </div>
+              </div>
+            </div>
+
+            <!-- Tab 5: Parties -->
+            <div id="tab-parties" class="form-tab-content" style="display:none;">
+              <div class="form-group">
+                <label class="form-label">Situación y Paradero del Titular Registral</label>
+                <textarea id="partyStatusInput" class="form-control" rows="2" placeholder="¿Está vivo? ¿Ha fallecido? ¿Domicilio conocido o paradero incierto para citación por la prensa bajo juramento Art. 56 COGEP?"></textarea>
+              </div>
+              <div class="grid-2">
+                <div class="form-group">
+                  <label class="form-label">Copropietarios o Herederos Conocidos</label>
+                  <textarea id="partyCoOwnersInput" class="form-control" rows="2" placeholder="Nombres de coherederos con o sin posesión efectiva inscrita. Esencial para litisconsorcio pasivo."></textarea>
+                </div>
+                <div class="form-group">
+                  <label class="form-label">Entidades Públicas / Terceros Involucrados</label>
+                  <textarea id="partyThirdPartiesInput" class="form-control" rows="2" placeholder="Municipio/GAD cantonal, Procuraduría General del Estado, colindantes conflictivos"></textarea>
+                </div>
+              </div>
+            </div>
+
+            <!-- Tab 6: Property Nature & Unprescriptibility -->
+            <div id="tab-nature" class="form-tab-content" style="display:none;">
+              <div style="background-color:#fffbeb; border:1px solid #fef3c7; border-radius:6px; padding:16px; margin-bottom:16px;">
+                <h4 style="font-size:0.88rem; font-weight:700; color:#b45309; margin-bottom:6px;">
+                  ⚠️ Verificación Previa de Imprescriptibilidad (Derecho Ecuatoriano)
+                </h4>
+                <p style="font-size:0.8rem; color:#92400e;">
+                  En Ecuador, conforme al Art. 604 del Código Civil, Art. 417 del COOTAD y Art. 10 de la Ley de Tierras Rurales, <strong>los bienes nacionales de uso público, los bienes municipales afectados a servicios públicos, las tierras comunales ancestrales y los baldíos estatales son IMPRESCRIPTIBLES en la vía civil ordinaria</strong>.
+                </p>
+              </div>
+
+              <div class="grid-2">
+                <div style="background:white; border:1px solid #cbd5e1; padding:14px; border-radius:6px;">
+                  <label style="display:flex; align-items:center; gap:8px; font-weight:600; font-size:0.85rem; cursor:pointer;">
+                    <input type="checkbox" id="checkIsPublic"> ¿Es o colinda con bien nacional de uso público? (calles, playas, quebradas)
+                  </label>
+                </div>
+                <div style="background:white; border:1px solid #cbd5e1; padding:14px; border-radius:6px;">
+                  <label style="display:flex; align-items:center; gap:8px; font-weight:600; font-size:0.85rem; cursor:pointer;">
+                    <input type="checkbox" id="checkIsMunicipal"> ¿Es o forma parte de patrimonio municipal / área verde / equipamiento?
+                  </label>
+                </div>
+                <div style="background:white; border:1px solid #cbd5e1; padding:14px; border-radius:6px;">
+                  <label style="display:flex; align-items:center; gap:8px; font-weight:600; font-size:0.85rem; cursor:pointer;">
+                    <input type="checkbox" id="checkIsCommunal"> ¿Es territorio de comunidad indígena, afroecuatoriana o montubia?
+                  </label>
+                </div>
+                <div style="background:white; border:1px solid #cbd5e1; padding:14px; border-radius:6px;">
+                  <label style="display:flex; align-items:center; gap:8px; font-weight:600; font-size:0.85rem; cursor:pointer;">
+                    <input type="checkbox" id="checkIsProtectedArea"> ¿Es área protegida estatal, reserva forestal o tierra baldía del Estado?
+                  </label>
+                </div>
+              </div>
+
+              <div class="form-group" style="margin-top:16px;">
+                <label class="form-label">Observaciones y Hechos sobre la Naturaleza Jurídica del Bien</label>
+                <textarea id="natureObservationsInput" class="form-control" rows="3" placeholder="Detalle si el predio tiene antecedente particular en el Registro de la Propiedad o si existe riesgo de afectación vial o pública..."></textarea>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ========================================== -->
+      <!-- VIEW 3: ANÁLISIS JURÍDICO POR ROL -->
+      <!-- ========================================== -->
+      <section id="view-analysis" class="view-panel" style="display:none;">
+        <!-- Role Bar Selector -->
+        <div style="background-color:white; border:1px solid var(--border-color); border-radius:8px; padding:12px 20px; margin-bottom:18px; display:flex; align-items:center; justify-content:space-between; flex-wrap:wrap; gap:12px;">
+          <div>
+            <span style="font-size:0.75rem; text-transform:uppercase; color:var(--text-muted); font-weight:700;">Perspectiva de Análisis Activa:</span>
+            <div id="analysisRoleIndicator" style="font-size:1.1rem; font-weight:700; color:var(--legal-blue);">Parte Actora</div>
+          </div>
+          <div style="display:flex; gap:8px;">
+            <button class="btn btn-sm btn-outline role-switch-btn" data-role="actora">Cambiar a Actora</button>
+            <button class="btn btn-sm btn-outline role-switch-btn" data-role="demandada">Cambiar a Demandada</button>
+            <button class="btn btn-sm btn-outline role-switch-btn" data-role="neutral">Análisis Neutral</button>
+            <button class="btn btn-sm btn-primary" id="btnRefreshAnalysis">🔄 Actualizar Análisis</button>
+          </div>
+        </div>
+
+        <!-- Section A: Obstacle & Risk Diagnosis -->
+        <div class="card">
+          <div class="card-header">
+            <h2 class="card-title">
+              <svg width="20" height="20" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z"/></svg>
+              Diagnóstico de Obstáculos, Vacíos y Riesgos Procesales Detectados
+            </h2>
+            <span id="obstacleCountBadge" class="badge badge-pending">0 Alertas</span>
+          </div>
+          <div class="card-body" id="analysisObstaclesContainer">
+            <!-- Rendered dynamically -->
+          </div>
+        </div>
+
+        <!-- Section B: Role-Specific Matrix -->
+        <div class="card">
+          <div class="card-header">
+            <h2 class="card-title" id="matrixTitle">
+              Matriz Jurídica Especializada
+            </h2>
+            <span class="badge badge-verified">Normas Ecuatorianas Vinculadas</span>
+          </div>
+          <div class="card-body">
+            <div class="table-responsive">
+              <table class="table" id="analysisMatrixTable">
+                <thead id="analysisMatrixThead">
+                  <!-- Rendered dynamically -->
+                </thead>
+                <tbody id="analysisMatrixTbody">
+                  <!-- Rendered dynamically -->
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+
+        <!-- Section C: Theory of Case or Defenses -->
+        <div class="card" id="analysisTheoryCard">
+          <div class="card-header">
+            <h2 class="card-title" id="theoryCardTitle">
+              Estructura Estratégica del Caso
+            </h2>
+          </div>
+          <div class="card-body" id="analysisTheoryContainer">
+            <!-- Rendered dynamically -->
+          </div>
+        </div>
+
+        <!-- Section D: 9-Part Research Assistant -->
+        <div class="card">
+          <div class="card-header">
+            <h2 class="card-title">
+              <svg width="20" height="20" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"/></svg>
+              Dictamen Estructurado del Asistente de Investigación (Los 9 Puntos Obligatorios)
+            </h2>
+            <span class="badge badge-verified">Metodología Ecuatoriana</span>
+          </div>
+          <div class="card-body" id="analysisResearchContainer">
+            <!-- Rendered dynamically -->
+          </div>
+        </div>
+      </section>
+
+      <!-- ========================================== -->
+      <!-- VIEW 4: BÚSQUEDA JURÍDICA ECUATORIANA -->
+      <!-- ========================================== -->
+      <section id="view-search" class="view-panel" style="display:none;">
+        <div class="card">
+          <div class="card-header">
+            <h2 class="card-title">
+              <svg width="20" height="20" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"/></svg>
+              Búsqueda en el Corpus Jurídico Ecuatoriano Verificado
+            </h2>
+            <button class="btn btn-outline btn-sm" id="btnOpenManualEntryModal">
+              + Registrar Aporte Manual
+            </button>
+          </div>
+          <div class="card-body">
+            <!-- Search Inputs -->
+            <div class="grid-3" style="margin-bottom:12px;">
+              <div class="form-group" style="grid-column: span 2;">
+                <input type="text" id="legalSearchQuery" class="form-control" placeholder="Buscar por artículo, sentencia, causa, frase exacta (ej: 2410, mera tenencia, 076-2012)...">
+              </div>
+              <div class="form-group">
+                <select id="legalSearchCategory" class="form-control">
+                  <option value="all">Todas las Categorías</option>
+                  <option value="normativa">Normativa (Códigos y Leyes)</option>
+                  <option value="jurisprudencia">Jurisprudencia (CNJ y CC)</option>
+                </select>
+              </div>
+            </div>
+
+            <!-- Chips -->
+            <div style="display:flex; flex-wrap:wrap; gap:6px; margin-bottom:16px;">
+              <span style="font-size:0.75rem; color:var(--text-muted); align-self:center;">Términos frecuentes:</span>
+              <button class="btn btn-sm btn-outline search-chip" data-term="2410">Art. 2410 C.C.</button>
+              <button class="btn btn-sm btn-outline search-chip" data-term="15 años">15 años</button>
+              <button class="btn btn-sm btn-outline search-chip" data-term="mera tenencia">Mera tenencia</button>
+              <button class="btn btn-sm btn-outline search-chip" data-term="animus domini">Ánimo de señor y dueño</button>
+              <button class="btn btn-sm btn-outline search-chip" data-term="individualizacion">Individualización</button>
+              <button class="btn btn-sm btn-outline search-chip" data-term="herederos">Herederos / Litisconsorcio</button>
+              <button class="btn btn-sm btn-outline search-chip" data-term="municipales">Bienes municipales</button>
+            </div>
+
+            <!-- Results Counter -->
+            <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:12px; font-size:0.8rem; color:var(--text-muted);">
+              <span id="searchResultsCount">Mostrando normas y sentencias</span>
+              <span>Filtradas exclusivamente bajo jurisdicción ecuatoriana</span>
+            </div>
+
+            <!-- Results Container -->
+            <div id="legalSearchResultsContainer" style="display:flex; flex-direction:column; gap:14px;">
+              <!-- Rendered dynamically -->
+            </div>
+          </div>
+        </div>
+
+        <!-- Official Portals Assistant Card -->
+        <div class="card">
+          <div class="card-header">
+            <h2 class="card-title">
+              <svg width="20" height="20" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"/></svg>
+              Asistente de Consulta Externa a Portales Oficiales del Estado
+            </h2>
+            <button class="btn btn-outline btn-sm" id="btnCheckPortalsHealth">🔄 Comprobar Disponibilidad en Línea</button>
+          </div>
+          <div class="card-body">
+            <p style="font-size:0.82rem; color:var(--text-muted); margin-bottom:14px;">
+              Si requiere consultar expedientes en trámite o jurisprudencia de última publicación, acceda a los buscadores oficiales con consulta asistida. Ningún resultado se simula; toda consulta no automatizable se realiza mediante enlace transparente directo:
+            </p>
+            <div class="grid-2" id="officialPortalsList">
+              <!-- Rendered dynamically -->
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ========================================== -->
+      <!-- VIEW 5: DOCUMENTOS Y MATRIZ PROBATORIA -->
+      <!-- ========================================== -->
+      <section id="view-docs" class="view-panel" style="display:none;">
+        <div class="grid-2">
+          <!-- Document Upload & Parser -->
+          <div class="card">
+            <div class="card-header">
+              <h2 class="card-title">Carga de Documentos del Expediente</h2>
+            </div>
+            <div class="card-body">
+              <p style="font-size:0.8rem; color:var(--text-muted); margin-bottom:12px;">
+                Permite cargar archivos <strong>PDF, DOCX, TXT o imágenes (PNG, JPG)</strong>. El archivo original se conserva intacto en almacenamiento local y se extrae el texto para análisis.
+              </p>
+              <div style="border:2px dashed #cbd5e1; border-radius:8px; padding:20px; text-align:center; background:#f8fafc; margin-bottom:14px;">
+                <input type="file" id="fileDocInput" style="display:none;" accept=".pdf,.docx,.txt,.png,.jpg,.jpeg">
+                <button class="btn btn-outline" id="btnTriggerUpload">
+                  <svg width="18" height="18" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-8l-4-4m0 0L8 8m4-4v12"/></svg>
+                  Seleccionar Documento para Cargar
+                </button>
+                <div style="font-size:0.75rem; color:var(--text-muted); margin-top:8px;">Máximo 25 MB por archivo</div>
+              </div>
+
+              <div id="caseDocumentsList" style="display:flex; flex-direction:column; gap:10px;">
+                <!-- Rendered dynamically -->
+              </div>
+            </div>
+          </div>
+
+          <!-- Evidence Inventory -->
+          <div class="card">
+            <div class="card-header">
+              <h2 class="card-title">Matriz Probatoria del Expediente</h2>
+              <button class="btn btn-gold btn-sm" id="btnAddEvidenceModal">+ Añadir Prueba</button>
+            </div>
+            <div class="card-body">
+              <div class="table-responsive">
+                <table class="table" id="evidenceTable">
+                  <thead>
+                    <tr>
+                      <th>Tipo</th>
+                      <th>Medio de Prueba</th>
+                      <th>Estado</th>
+                      <th style="text-align:right;">Acción</th>
+                    </tr>
+                  </thead>
+                  <tbody id="evidenceTableBody">
+                    <!-- Rendered dynamically -->
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Chronology and Witness Questions -->
+        <div class="grid-2">
+          <!-- Chronology -->
+          <div class="card">
+            <div class="card-header">
+              <h2 class="card-title">Cronología de Posesión y Hechos Relevantes</h2>
+              <button class="btn btn-outline btn-sm" id="btnAddChronologyModal">+ Añadir Hito</button>
+            </div>
+            <div class="card-body">
+              <div class="timeline" id="caseTimelineContainer">
+                <!-- Rendered dynamically -->
+              </div>
+            </div>
+          </div>
+
+          <!-- Witness Questionnaire -->
+          <div class="card">
+            <div class="card-header">
+              <h2 class="card-title">Cuestionario Testimonial Técnico Sugerido</h2>
+              <button class="btn btn-outline btn-sm" id="btnAddWitnessQuestion">+ Añadir Pregunta</button>
+            </div>
+            <div class="card-body">
+              <p style="font-size:0.8rem; color:var(--text-muted); margin-bottom:12px;">
+                Preguntas formuladas conforme a la práctica procesal civil ecuatoriana para acreditar hechos notorios, posesión pacífica y linderos ante el juez:
+              </p>
+              <div id="witnessQuestionsList" style="display:flex; flex-direction:column; gap:8px;">
+                <!-- Rendered dynamically -->
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ========================================== -->
+      <!-- VIEW 6: INFORMES Y EXPORTACIÓN -->
+      <!-- ========================================== -->
+      <section id="view-export" class="view-panel" style="display:none;">
+        <div class="card">
+          <div class="card-header">
+            <h2 class="card-title">
+              <svg width="20" height="20" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"/></svg>
+              Generador de Informes Jurídicos Profesionales
+            </h2>
+            <div style="display:flex; gap:10px;">
+              <button class="btn btn-outline" id="btnPrintReport">
+                <svg width="16" height="16" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 17h2a2 2 0 002-2v-4a2 2 0 00-2-2H5a2 2 0 00-2 2v4a2 2 0 002 2h2m2 4h6a2 2 0 002-2v-4a2 2 0 00-2-2H9a2 2 0 00-2 2v4a2 2 0 002 2zm8-12V5a2 2 0 00-2-2H9a2 2 0 00-2 2v4h10z"/></svg>
+                Vista para Imprimir / PDF
+              </button>
+              <button class="btn btn-primary" id="btnDownloadDocx">
+                <svg width="16" height="16" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"/></svg>
+                Descargar Informe en Word (.DOCX)
+              </button>
+            </div>
+          </div>
+          <div class="card-body">
+            <!-- Export Options -->
+            <div style="background-color:#f8fafc; border:1px solid #e2e8f0; border-radius:6px; padding:16px; margin-bottom:20px;">
+              <h4 style="font-size:0.88rem; font-weight:700; color:var(--primary-900); margin-bottom:8px;">Opciones de Privacidad y Contenido del Informe</h4>
+              <div class="grid-2">
+                <label style="display:flex; align-items:center; gap:8px; font-size:0.85rem; cursor:pointer;">
+                  <input type="checkbox" id="exportAnonymizeToggle">
+                  <span><strong>Anonimizar Datos Personales:</strong> Reemplazar nombres de cliente y demandado por etiquetas genéricas y ocultar números de cédula.</span>
+                </label>
+                <label style="display:flex; align-items:center; gap:8px; font-size:0.85rem; cursor:pointer;">
+                  <input type="checkbox" id="exportIncludeDeontology" checked>
+                  <span><strong>Incluir Advertencia Deontológica:</strong> Advertencia sobre límites del informe y no reemplazo de asesoría.</span>
+                </label>
+              </div>
+            </div>
+
+            <!-- Report Live Preview -->
+            <div id="reportPreviewContainer" style="background:white; border:1px solid #cbd5e1; border-radius:8px; padding:32px; box-shadow:var(--shadow-sm);">
+              <!-- Rendered dynamically -->
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ========================================== -->
+      <!-- VIEW 7: PRIVACIDAD Y SEGURIDAD -->
+      <!-- ========================================== -->
+      <section id="view-privacy" class="view-panel" style="display:none;">
+        <div class="grid-2">
+          <div class="card">
+            <div class="card-header">
+              <h2 class="card-title">Arquitectura de Seguridad y Privacidad</h2>
+            </div>
+            <div class="card-body" style="font-size:0.85rem; line-height:1.6; color:var(--primary-700);">
+              <p style="margin-bottom:12px;">
+                <strong>1. Principio Local-First:</strong> Todos los expedientes, transcripciones de documentos y análisis se guardan exclusivamente en el disco local de su computadora (directorio <code>data/</code>). Ningún dato confidencial es transmitido a la nube.
+              </p>
+              <p style="margin-bottom:12px;">
+                <strong>2. Sin Proveedores Externos de IA por Defecto:</strong> La aplicación opera con motores determinísticos basados en el Código Civil, COGEP y jurisprudencia ecuatoriana verificada. Si el usuario decide configurar una API de IA en el futuro, requerirá consentimiento explícito previo.
+              </p>
+              <p style="margin-bottom:12px;">
+                <strong>3. Preservación del Original:</strong> Los documentos PDF y DOCX cargados nunca son sobreescritos ni alterados. Se extrae una copia de texto para análisis.
+              </p>
+              <p>
+                <strong>4. Anonimización Previa:</strong> La herramienta incluye una función con un clic para anonimizar nombres y cédulas antes de cualquier exportación o procesamiento.
+              </p>
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="card-header">
+              <h2 class="card-title">Gestión de Copias de Seguridad y Datos</h2>
+            </div>
+            <div class="card-body">
+              <p style="font-size:0.84rem; color:var(--text-muted); margin-bottom:14px;">
+                Exporte todos sus expedientes en un único archivo JSON de respaldo para archivado o migración a otro equipo:
+              </p>
+              <div style="display:flex; flex-direction:column; gap:12px;">
+                <button class="btn btn-outline" id="btnDownloadBackup">
+                  <svg width="16" height="16" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"/></svg>
+                  Descargar Copia de Seguridad Completa (.JSON)
+                </button>
+                <div style="border-top:1px solid #e2e8f0; padding-top:12px;">
+                  <label class="form-label">Restaurar Copia de Seguridad desde Archivo JSON</label>
+                  <input type="file" id="restoreFileInput" accept=".json" class="form-control" style="margin-bottom:8px;">
+                  <button class="btn btn-gold btn-sm" id="btnRestoreBackup">Restaurar Expedientes</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+    </main>
+  </div>
+</div>
+
+<!-- ========================================== -->
+<!-- MODALS -->
+<!-- ========================================== -->
+
+<!-- Modal: New Case -->
+<div class="modal-overlay" id="modalNewCase">
+  <div class="modal">
+    <div class="modal-header">
+      <h3 class="modal-title">Crear Nuevo Expediente</h3>
+      <button class="modal-close" data-close-modal="modalNewCase">&times;</button>
+    </div>
+    <div class="modal-body">
+      <div class="form-group">
+        <label class="form-label">Título del Caso <span class="required">*</span></label>
+        <input type="text" id="newCaseTitle" class="form-control" placeholder="Ej: Prescripción Lote Hacienda San José">
+      </div>
+      <div class="grid-2">
+        <div class="form-group">
+          <label class="form-label">Código Local</label>
+          <input type="text" id="newCaseCode" class="form-control" placeholder="EXP-2026-...">
+        </div>
+        <div class="form-group">
+          <label class="form-label">Rol de Análisis <span class="required">*</span></label>
+          <select id="newCaseRole" class="form-control">
+            <option value="actora">Parte Actora (Demandante)</option>
+            <option value="demandada">Parte Demandada (Dueño / Opositor)</option>
+            <option value="neutral">Análisis Neutral / Auditoría de Riesgo</option>
+          </select>
+        </div>
+      </div>
+      <div class="grid-2">
+        <div class="form-group">
+          <label class="form-label">Cliente / Patrocinado</label>
+          <input type="text" id="newCaseClient" class="form-control" placeholder="Nombre completo">
+        </div>
+        <div class="form-group">
+          <label class="form-label">Cantón del Inmueble</label>
+          <input type="text" id="newCaseCanton" class="form-control" placeholder="Ej: Quito, Guayaquil, Cuenca...">
+        </div>
+      </div>
+    </div>
+    <div class="modal-footer">
+      <button class="btn btn-outline" data-close-modal="modalNewCase">Cancelar</button>
+      <button class="btn btn-primary" id="btnSubmitNewCase">Crear Expediente</button>
+    </div>
+  </div>
+</div>
+
+<!-- Modal: Manual Legal Entry -->
+<div class="modal-overlay" id="modalManualEntry">
+  <div class="modal">
+    <div class="modal-header">
+      <h3 class="modal-title">Registrar Norma o Jurisprudencia Manualmente</h3>
+      <button class="modal-close" data-close-modal="modalManualEntry">&times;</button>
+    </div>
+    <div class="modal-body">
+      <div style="background-color:#f3e8ff; border:1px solid #d8b4fe; border-radius:6px; padding:10px 14px; margin-bottom:14px; font-size:0.78rem; color:#6b21a8;">
+        ℹ️ Este registro se etiquetará automáticamente como: <strong>"Aportado por el usuario, pendiente de verificación"</strong> para resguardar la exactitud jurídica deontológica.
+      </div>
+      <div class="grid-2">
+        <div class="form-group">
+          <label class="form-label">Tipo de Fuente <span class="required">*</span></label>
+          <select id="manualCategory" class="form-control">
+            <option value="jurisprudencia">Sentencia / Jurisprudencia</option>
+            <option value="normativa">Norma Legal / Reglamentaria</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label class="form-label">Órgano Emisor <span class="required">*</span></label>
+          <input type="text" id="manualOrgan" class="form-control" placeholder="Ej: Corte Nacional de Justicia, Corte Constitucional">
+        </div>
+      </div>
+      <div class="grid-2">
+        <div class="form-group">
+          <label class="form-label">Nombre Oficial / Título <span class="required">*</span></label>
+          <input type="text" id="manualOfficialName" class="form-control" placeholder="Ej: Sentencia Sala Civil CNJ">
+        </div>
+        <div class="form-group">
+          <label class="form-label">Artículo o Número de Causa / Resolución <span class="required">*</span></label>
+          <input type="text" id="manualArticleOrCause" class="form-control" placeholder="Ej: Art. 2410 o Res. 120-2023">
+        </div>
+      </div>
+      <div class="form-group">
+        <label class="form-label">Texto o Regla Pertinente Exacta <span class="required">*</span></label>
+        <textarea id="manualRelevantText" class="form-control" rows="3" placeholder="Copie el texto literal del artículo o la ratio decidendi de la resolución..."></textarea>
+      </div>
+      <div class="grid-2">
+        <div class="form-group">
+          <label class="form-label">Fuente Oficial Declarada</label>
+          <input type="text" id="manualOfficialSource" class="form-control" placeholder="Ej: Registro Oficial N° 340 o Gaceta Judicial">
+        </div>
+        <div class="form-group">
+          <label class="form-label">Enlace URL Oficial (si se conoce)</label>
+          <input type="url" id="manualOfficialUrl" class="form-control" placeholder="https://www.cortenacional.gob.ec/...">
+        </div>
+      </div>
+    </div>
+    <div class="modal-footer">
+      <button class="btn btn-outline" data-close-modal="modalManualEntry">Cancelar</button>
+      <button class="btn btn-gold" id="btnSubmitManualEntry">Guardar Aporte</button>
+    </div>
+  </div>
+</div>
+
+<!-- Modal: View Extracted Text -->
+<div class="modal-overlay" id="modalViewText">
+  <div class="modal" style="max-width:800px;">
+    <div class="modal-header">
+      <h3 class="modal-title" id="viewTextTitle">Contenido Extraído del Documento</h3>
+      <button class="modal-close" data-close-modal="modalViewText">&times;</button>
+    </div>
+    <div class="modal-body">
+      <div id="viewTextMeta" style="font-size:0.8rem; color:var(--text-muted); margin-bottom:12px;"></div>
+      <textarea id="viewTextContent" class="form-control" rows="16" readonly style="font-family:monospace; font-size:0.82rem; background:#f8fafc;"></textarea>
+    </div>
+    <div class="modal-footer">
+      <button class="btn btn-primary" data-close-modal="modalViewText">Cerrar</button>
+    </div>
+  </div>
+</div>
+
+<!-- Modal: Add Evidence -->
+<div class="modal-overlay" id="modalAddEvidence">
+  <div class="modal">
+    <div class="modal-header">
+      <h3 class="modal-title">Añadir Medio Probatorio</h3>
+      <button class="modal-close" data-close-modal="modalAddEvidence">&times;</button>
+    </div>
+    <div class="modal-body">
+      <div class="grid-2">
+        <div class="form-group">
+          <label class="form-label">Tipo de Prueba <span class="required">*</span></label>
+          <select id="evidenceTypeInput" class="form-control">
+            <option value="Documental">Documental (Certificados, escrituras, planillas)</option>
+            <option value="Pericial">Pericial (Planimetría georreferenciada, peritaje constructivo)</option>
+            <option value="Testimonial">Testimonial (Declaración de vecinos colindantes)</option>
+            <option value="Inspección">Inspección Judicial (Art. 228 COGEP)</option>
+            <option value="Declaración">Declaración de Parte</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label class="form-label">Estado de la Prueba <span class="required">*</span></label>
+          <select id="evidenceStatusInput" class="form-control">
+            <option value="Disponible">Disponible (En poder de la parte)</option>
+            <option value="En trámite">En trámite (Solicitada al Registro / Municipio)</option>
+            <option value="Pendiente de solicitud en demanda">Pendiente de solicitud en demanda / contestación</option>
+            <option value="No obtenida">No obtenida</option>
+          </select>
+        </div>
+      </div>
+      <div class="form-group">
+        <label class="form-label">Nombre del Medio de Prueba <span class="required">*</span></label>
+        <input type="text" id="evidenceNameInput" class="form-control" placeholder="Ej: Certificado de Gravámenes del Registro de la Propiedad">
+      </div>
+      <div class="form-group">
+        <label class="form-label">Descripción y Pertinencia Jurídica</label>
+        <textarea id="evidenceDescInput" class="form-control" rows="3" placeholder="Qué hecho concreto acredita este medio probatorio..."></textarea>
+      </div>
+    </div>
+    <div class="modal-footer">
+      <button class="btn btn-outline" data-close-modal="modalAddEvidence">Cancelar</button>
+      <button class="btn btn-gold" id="btnSubmitAddEvidence">Agregar a la Matriz</button>
+    </div>
+  </div>
+</div>
+
+<!-- Modal: Add Chronology Milestone -->
+<div class="modal-overlay" id="modalAddChronology">
+  <div class="modal">
+    <div class="modal-header">
+      <h3 class="modal-title">Añadir Hito a la Cronología de Posesión</h3>
+      <button class="modal-close" data-close-modal="modalAddChronology">&times;</button>
+    </div>
+    <div class="modal-body">
+      <div class="form-group">
+        <label class="form-label">Fecha del Hito <span class="required">*</span></label>
+        <input type="date" id="chronoDateInput" class="form-control">
+      </div>
+      <div class="form-group">
+        <label class="form-label">Acontecimiento / Hecho Relevante <span class="required">*</span></label>
+        <textarea id="chronoEventInput" class="form-control" rows="3" placeholder="Ej: Toma de posesión material, construcción del cerramiento, suscripción de finiquito..."></textarea>
+      </div>
+    </div>
+    <div class="modal-footer">
+      <button class="btn btn-outline" data-close-modal="modalAddChronology">Cancelar</button>
+      <button class="btn btn-primary" id="btnSubmitAddChronology">Guardar Hito</button>
+    </div>
+  </div>
+</div>
+
+<!-- Toast Container -->
+<div class="toast-container" id="toastContainer"></div>
+
+<!-- Scripts -->
+<script src="/js/caseModule.js"></script>
+<script src="/js/analysisModule.js"></script>
+<script src="/js/searchModule.js"></script>
+<script src="/js/docModule.js"></script>
+<script src="/js/exportModule.js"></script>
+<script src="/js/app.js"></script>
+
+</body>
+</html>

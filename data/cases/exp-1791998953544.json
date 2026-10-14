@@ -1,0 +1,71 @@
+{
+  "id": "exp-1791998953544",
+  "code": "Exp 001",
+  "title": "Prescripción de Bien Inmueble en NoNo",
+  "role": "actora",
+  "is_demo": false,
+  "createdAt": "2026-10-14T17:29:13.544Z",
+  "updatedAt": "2026-10-14T17:36:33.561Z",
+  "cutoffDate": "2026-10-14",
+  "client": "Danna Paredes ",
+  "clientCedula": "",
+  "proceduralStage": "Pre-procesal (Preparación de demanda)",
+  "court": "",
+  "causeNumber": "",
+  "location": {
+    "province": "",
+    "canton": "Quito",
+    "parroquia": "",
+    "sector": "",
+    "cadastralKey": "",
+    "surface": "",
+    "boundaries": {
+      "north": "",
+      "south": "",
+      "east": "",
+      "west": ""
+    }
+  },
+  "registry": {
+    "registryOffice": "",
+    "registeredOwner": "",
+    "inscriptionNumber": "",
+    "tome": "",
+    "folio": "",
+    "inscriptionDate": "",
+    "encumbrances": "",
+    "backgroundDomain": ""
+  },
+  "possession": {
+    "startDate": "2006-10-14",
+    "entryMethod": "compra que solo quedó en promesa de compra venta que nunca se formalizó ",
+    "actsOfOwner": "Se compró el terreno, durante el tiempo de posesión se construyó una casa, cerramiento e incluso se ha participado activamente en directiva y demás actividades colectivas en favor del sector ",
+    "continuity": "posesión pacífica hasta el día de hoy ",
+    "publicity": "pública y notoria ante vecino ",
+    "peaceful": "pacífica ",
+    "recognitionOfForeignDomain": "Hay un contrato de promesa de compra venta ",
+    "interruptionsOrLawsuits": "No, solo que en la actualidad la anterior dueña quiere aprovecharse de la situación y no formalizar la transferencia de dominio "
+  },
+  "opposingParty": {
+    "status": "",
+    "coOwners": "",
+    "thirdParties": ""
+  },
+  "propertyNature": {
+    "isPublic": false,
+    "isMunicipal": false,
+    "isCommunal": false,
+    "isProtectedArea": false,
+    "observations": "El terreno es parte de un terreno más grande que en la actualidad no se encuentra individualizado "
+  },
+  "evidence": [],
+  "chronology": [],
+  "witnessQuestions": [
+    "¿Diga el testigo si conoce desde qué fecha ejerce posesión material el actor en el predio?",
+    "¿Diga el testigo qué actos materiales (construcciones, siembras, cerramientos) ha observado?",
+    "¿Diga el testigo si ha existido reclamo, violencia o interrupción de terceros durante este lapso?",
+    "¿Diga el testigo si en el sector se reconoce pública y notoriedad de dueño al actor?"
+  ],
+  "notes": "",
+  "documents": []
+}

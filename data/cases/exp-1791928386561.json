@@ -1,0 +1,63 @@
+{
+  "id": "exp-1791928386561",
+  "code": "EXP-TEST-001",
+  "title": "Caso de Prueba Automatizada - Lote Pifo",
+  "role": "neutral",
+  "is_demo": false,
+  "createdAt": "2026-10-13T21:53:06.561Z",
+  "updatedAt": "2026-10-13T22:00:48.387Z",
+  "cutoffDate": "2026-10-13",
+  "client": "Luis Alberto Santillán Gomez",
+  "clientCedula": "1709876543",
+  "proceduralStage": "Pre-procesal (Preparación)",
+  "court": "",
+  "causeNumber": "",
+  "location": {
+    "province": "Pichincha",
+    "canton": "Quito",
+    "parroquia": "Pifo",
+    "sector": "Sector El Belén",
+    "cadastralKey": "1701100234",
+    "surface": "1200.00 m²",
+    "boundaries": {
+      "north": "Calle pública",
+      "south": "Quebrada",
+      "east": "Lote 4",
+      "west": "Lote 2"
+    }
+  },
+  "registry": {
+    "registryOffice": "Quito",
+    "registeredOwner": "Inversiones Agrícolas S.A.",
+    "inscriptionNumber": "9845"
+  },
+  "possession": {
+    "startDate": "2005-01-01",
+    "entryMethod": "Posesión directa pacífica",
+    "actsOfOwner": "Construcción de vivienda de bloque y cerramiento",
+    "continuity": "Posesión continua e ininterrumpida",
+    "publicity": "Pública y notoria"
+  },
+  "opposingParty": {
+    "status": "",
+    "coOwners": "",
+    "thirdParties": ""
+  },
+  "propertyNature": {
+    "isPublic": false,
+    "isMunicipal": false,
+    "isCommunal": false,
+    "isProtectedArea": false,
+    "observations": ""
+  },
+  "evidence": [],
+  "chronology": [],
+  "witnessQuestions": [
+    "¿Diga el testigo si conoce desde qué fecha ejerce posesión material el actor en el predio?",
+    "¿Diga el testigo qué actos materiales (construcciones, siembras, cerramientos) ha observado?",
+    "¿Diga el testigo si ha existido reclamo, violencia o interrupción de terceros durante este lapso?",
+    "¿Diga el testigo si en el sector se reconoce pública y notoriedad de dueño al actor?"
+  ],
+  "notes": "",
+  "documents": []
+}
