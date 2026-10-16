@@ -7,9 +7,24 @@
   img { max-width:100%; height:auto; }
   .table-responsive { overflow-x:auto; -webkit-overflow-scrolling: touch; }
   .card { margin: 10px; }
+  .card, .card-body {
+    width:100% !important;
+    max-width:100% !important;
+    box-sizing:border-box;
+  }
+  table {
+    width:100% !important;
+    font-size:14px;
+  }
+  th, td {
+    padding:10px 6px !important;
+  }
   @media (max-width: 600px) {
-    body { padding: 5px; }
-    h2 { font-size: 18px; }
+    body { padding:0 !important; margin:0 !important; }
+    .card { margin:0 !important; border-radius:0 !important; }
+    .card-body { padding:8px 5px !important; }
+    th, td { padding:10px 6px !important; font-size:13px; }
+    h2 { font-size:18px; }
   }
 </style>
 <title>LexDominio Ecuador - Asistente Jurídico de Prescripción Extraordinaria Adquisitiva</title>
